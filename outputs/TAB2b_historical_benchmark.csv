@@ -1,0 +1,6 @@
+source,hist_median,hist_mean,postLLMhi_median,postLLMhi_mean,postLLMlo_median,postLLMlo_mean,hi_vs_hist_median_ratio
+canada,767.5,3416.057,1019.0,6408.559,577.5,5189.5864,1.3276872964169382
+changeorg_au,4.0,603.77594,5.0,488.4935,4.0,477.34085,1.25
+changeorg_other,1.0,405.69308,1.0,175.73605,1.0,195.06642,1.0
+changeorg_treated,3.0,490.19843,3.0,317.87292,3.0,361.88116,1.0
+uk_2019,13.0,1322.0481,21.0,1408.9894,21.0,1476.4021,1.6153846153846154

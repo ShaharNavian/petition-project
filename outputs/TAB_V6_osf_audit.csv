@@ -1,0 +1,28 @@
+metric,value,comment
+metadata: all_collected_petition_ids_2025092,"506,034 rows","506,034 unique ids"
+metadata: all_collected_petition_ids_2025092,"505,111 rows","505,111 unique ids"
+metadata: all_collected_petition_ids_2025092,"506,288 rows","506,288 unique ids"
+text_titled: all_english_id_and_text_20250917 (,"964,636 rows","964,636 unique ids"
+text_original: english_original_text.csv,"964,636 rows","964,636 unique ids"
+labeled: full_english_labeled_20260409 (1).,"964,636 rows","964,636 unique ids"
+topic_label: petition_id_label (1).csv,"964,521 rows","964,521 unique ids"
+id-files: exact full-row duplicates across the 3 files,1,"same (petition_id,user_id,createdAt) appearing twice"
+id-files: same petition_id with DIFFERENT user_id,0,should be 0 — nonzero would be a data inconsistency
+metadata files: total ids across the 3,"1,517,433",
+metadata union (distinct ids),"1,517,432",
+ids shared between files,1,VERDICT: 1 ids appear in more than one file — overlapping dumps; the ingest deduplicates by petition_id
+"vs paper N = 1,517,433",-1,difference
+text ids,"964,636","the ~965k file is the ENGLISH subset, not a deduplicated 1.5M"
+text ids missing from metadata union,0,should be ~0
+text ids missing from labeled file,0,should be ~0
+ids in metadata union but NOT in text,"552,796","these are the non-English (and any withheld) petitions -> ~1.5M − ~965k, NOT duplicates; verify: this number + text ids ≈ metadata union"
+titled-text vs original-text id overlap,"964,636","expect = both files (same petitions, two text forms)"
+createdAt |diff|>1d: full_english_lab vs all_collected_pe,"0 / 50,000",sampled common ids
+createdAt |diff|>1d: full_english_lab vs all_collected_pe,"0 / 50,000",sampled common ids
+createdAt |diff|>1d: full_english_lab vs all_collected_pe,"0 / 50,000",sampled common ids
+user_id mismatches: full_english_lab vs all_collected_pe,"0 / 50,000",sampled common ids (should be ~0)
+user_id mismatches: full_english_lab vs all_collected_pe,"0 / 50,000",sampled common ids (should be ~0)
+user_id mismatches: full_english_lab vs all_collected_pe,"0 / 50,000",sampled common ids (should be ~0)
+docs in exact-duplicate clusters,"47,245","4.90% of 964,636 (dup_weight in 11.3 downweights them; templates are data, not errors)"
+countries with >=1000 post-era petitions,24,full table -> TAB_V6_osf_countries.csv (yes — per-petition country EXISTS)
+monthly volume figure,saved,a rising ramp can be growth AND/OR deletion attrition of older petitions — treat early-2022 composition with care

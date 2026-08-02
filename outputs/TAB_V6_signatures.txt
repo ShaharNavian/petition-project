@@ -1,0 +1,37 @@
+=== 11.11 censoring audit (share of petitions still open) ===
+yr                 2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024  2025
+source                                                                                                     
+canada              NaN   NaN   NaN   NaN   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+changeorg_au        NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   0.0   0.0   0.0   NaN
+changeorg_other     NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   0.0   0.0   0.0   NaN
+changeorg_treated   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   0.0   0.0   0.0   NaN
+uk_2010             0.0   0.0   0.0   0.0   0.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+uk_2015             NaN   NaN   NaN   NaN   0.0   0.0   0.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+uk_2017             NaN   NaN   NaN   NaN   NaN   NaN   0.0   0.0   0.0   NaN   NaN   NaN   NaN   NaN   NaN
+uk_2019             NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   0.0   0.0   0.0   0.0   0.0   NaN
+
+=== main: POST era (all EN source-anchored) ===
+[post_all] n=534,504  phi=46357.6  lex_score_v6: coef=-0.0690 (HC1 se=0.0121, p=0.0000) -> -6.7% signatures per +1 SD style
+
+=== benchmark: PRE era, identical model (professionalism baseline) ===
+[pre_benchmark] n=384,851  phi=101181.5  lex_score_v6: coef=+0.0138 (HC1 se=0.0186, p=0.4603) -> +1.4% signatures per +1 SD style
+
+=== robustness: post era, CLOSED petitions only (censoring-free) ===
+[post_closed_only] n=534,504  phi=46357.6  lex_score_v6: coef=-0.0690 (HC1 se=0.0121, p=0.0000) -> -6.7% signatures per +1 SD style
+
+=== robustness: uk_2019 only ===
+[uk2019_pre] n=37,483  phi=46608.5  lex_score_v6: coef=+0.0349 (HC1 se=0.0448, p=0.4368) -> +3.5% signatures per +1 SD style
+[uk2019_post] n=7,369  phi=30236.1  lex_score_v6: coef=-0.1346 (HC1 se=0.0345, p=0.0001) -> -12.6% signatures per +1 SD style
+
+=== threshold attainment (closed petitions, logistic, HC1) ===
+threshold 10,000: base rate 0.735% on 919,355 closed docs
+  lex_score_v6: OR=1.055  p=0.0002
+  lex_score_v6:post_llm[T.True]: OR=0.849  p=0.0000
+threshold 100,000: base rate 0.081% on 919,355 closed docs
+  lex_score_v6: OR=1.025  p=0.5367
+  lex_score_v6:post_llm[T.True]: OR=0.813  p=0.0024
+
+=== Cox time-to-threshold (scaffold) ===
+threshold timestamps absent from corpus. To enable the Cox model, add
+  'response_threshold_reached_at', 'debate_threshold_reached_at'
+to the uk_current attribute list in cell 2.1, set REFRESH_UK_CURRENT=True, re-run 2.1 -> 3 -> 11.2+.

@@ -1,0 +1,10 @@
+sample,stat,value,se,p,n_writers,n_docs
+all_changeorg,within_writer_delta,0.6193200210420801,0.025337757001612643,6.035845205436048e-132,7250.0,23043.0
+changeorg_treated,within_writer_delta,0.6587702362450497,0.029234986380965326,1.9437716507018874e-112,5838.0,18888.0
+changeorg_au,within_writer_delta,0.37011920569592366,0.09125109821764238,4.990913797869846e-05,357.0,1255.0
+all_changeorg,within_delta_1-2,0.8242076276121556,,,4513.0,
+all_changeorg,within_delta_3-5,0.692053175883277,,,2218.0,
+all_changeorg,within_delta_6+,0.5128005907036134,,,519.0,
+all_changeorg,repeat_writers_pre_to_post,0.7845932885975002,,,,
+all_changeorg,newcomers_vs_repeat_in_post,0.5895229830136985,,,,
+all_changeorg,share_adopters_gt_1SD,0.2537931034482759,,,7250.0,

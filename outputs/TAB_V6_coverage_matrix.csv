@@ -1,0 +1,13 @@
+ptype,source,n_pre,n_post
+commercial,changeorg_au,10488,22112
+commercial,changeorg_other,63142,147446
+commercial,changeorg_treated,172760,357105
+government,canada,1533,472
+government,roi_ru,118,100
+government,scotland,65,339
+government,uk_2010,48740,0
+government,uk_2015,26986,0
+government,uk_2017,23741,0
+government,uk_2019,37485,7369
+government,uk_current,0,14379
+other_online,bluehouse,398935,0

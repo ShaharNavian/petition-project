@@ -1,0 +1,4 @@
+metric,value,ci_lo,ci_hi,n
+median_log_share_ratio_both_era,-0.5726493983930849,-0.5726493983930849,-0.5726493983930849,15108
+median_gap_days_pre,7.0,,,6848
+median_gap_days_post,21.0,,,9300

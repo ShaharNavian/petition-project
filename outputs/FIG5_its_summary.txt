@@ -1,0 +1,65 @@
+LEX OUTCOME
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    lex   R-squared:                       0.690
+Model:                            OLS   Adj. R-squared:                  0.687
+Method:                 Least Squares   F-statistic:                     11.24
+Date:                Tue, 28 Jul 2026   Prob (F-statistic):           1.49e-13
+Time:                        17:30:37   Log-Likelihood:                -68.124
+No. Observations:                 727   AIC:                             152.2
+Df Residuals:                     719   BIC:                             189.0
+Df Model:                           7                                         
+Covariance Type:                  HAC                                         
+===================================================================================
+                      coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+Intercept           0.0422      0.032      1.320      0.187      -0.020       0.105
+C(qoy)[T.2]        -0.0143      0.069     -0.208      0.835      -0.149       0.121
+C(qoy)[T.3]         0.0254      0.056      0.457      0.648      -0.083       0.134
+C(qoy)[T.4]         0.0565      0.055      1.018      0.309      -0.052       0.165
+t                  -0.0055      0.003     -1.996      0.046      -0.011   -9.95e-05
+post_chatgpt        0.0669      0.042      1.610      0.107      -0.015       0.148
+post_gpt4           1.2412      0.211      5.875      0.000       0.827       1.655
+post_gpt4o_free    -0.6034      0.233     -2.593      0.010      -1.059      -0.147
+==============================================================================
+Omnibus:                       77.628   Durbin-Watson:                   0.329
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              486.654
+Skew:                          -0.197   Prob(JB):                    2.11e-106
+Kurtosis:                       6.989   Cond. No.                         92.7
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and without small sample correction
+
+PLACEBO OUTCOME
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                placebo   R-squared:                       0.229
+Model:                            OLS   Adj. R-squared:                  0.221
+Method:                 Least Squares   F-statistic:                     13.11
+Date:                Tue, 28 Jul 2026   Prob (F-statistic):           5.94e-16
+Time:                        17:30:37   Log-Likelihood:                -293.20
+No. Observations:                 727   AIC:                             602.4
+Df Residuals:                     719   BIC:                             639.1
+Df Model:                           7                                         
+Covariance Type:                  HAC                                         
+===================================================================================
+                      coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+Intercept           2.4079      0.062     38.841      0.000       2.286       2.529
+C(qoy)[T.2]        -0.0857      0.071     -1.204      0.228      -0.225       0.054
+C(qoy)[T.3]        -0.1544      0.081     -1.904      0.057      -0.313       0.005
+C(qoy)[T.4]        -0.1268      0.076     -1.670      0.095      -0.276       0.022
+t                   0.0086      0.010      0.894      0.371      -0.010       0.027
+post_chatgpt       -0.2881      0.125     -2.300      0.021      -0.534      -0.043
+post_gpt4          -0.4542      0.111     -4.094      0.000      -0.672      -0.237
+post_gpt4o_free     0.6508      0.165      3.953      0.000       0.328       0.973
+==============================================================================
+Omnibus:                       32.436   Durbin-Watson:                   0.637
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               70.935
+Skew:                           0.239   Prob(JB):                     3.95e-16
+Kurtosis:                       4.454   Cond. No.                         92.7
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 8 lags and without small sample correction

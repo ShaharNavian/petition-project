@@ -1,0 +1,3 @@
+lang,signal,n_pre,n_post,cohens_d,MWU_p
+en,lex_score,384917,549222,0.673657437664877,0.0
+en,struct_score,384917,549222,0.1039016038885461,0.0

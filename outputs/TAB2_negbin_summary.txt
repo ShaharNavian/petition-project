@@ -1,0 +1,120 @@
+phi(quasi-Poisson)=60569.251
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:             signatures   No. Observations:               546554
+Model:                            GLM   Df Residuals:                   546510
+Model Family:                 Poisson   Df Model:                           43
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -7.0740e+08
+Date:                Tue, 28 Jul 2026   Deviance:                   1.4127e+09
+Time:                        17:32:31   Pearson chi2:                 3.31e+10
+No. Iterations:                    12   Pseudo R-squ. (CS):              1.000
+Covariance Type:                  HC1                                         
+==================================================================================================================================
+                                                                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                         -0.9825      1.459     -0.674      0.501      -3.842       1.877
+C(year)[T.2023]                                                    0.2385      0.105      2.269      0.023       0.032       0.445
+C(year)[T.2024]                                                    0.3165      0.134      2.361      0.018       0.054       0.579
+C(year)[T.2025]                                                   -0.3626      0.428     -0.847      0.397      -1.201       0.476
+C(year)[T.2026]                                                   -2.0185      0.437     -4.622      0.000      -2.874      -1.162
+C(source)[T.changeorg_au]                                         -7.0644      0.424    -16.650      0.000      -7.896      -6.233
+C(source)[T.changeorg_other]                                      -7.8933      0.426    -18.536      0.000      -8.728      -7.059
+C(source)[T.changeorg_treated]                                    -7.3559      0.420    -17.499      0.000      -8.180      -6.532
+C(source)[T.uk_2019]                                               1.0135      0.601      1.685      0.092      -0.165       2.192
+C(source)[T.uk_current]                                            1.7353      0.572      3.033      0.002       0.614       2.857
+C(topic)[T.Cabinet Office]                                        -2.0601      0.660     -3.121      0.002      -3.354      -0.766
+C(topic)[T.Civil Rights and Diversity]                            -0.5096      0.143     -3.569      0.000      -0.790      -0.230
+C(topic)[T.Community Planning]                                     0.3794      0.106      3.570      0.000       0.171       0.588
+C(topic)[T.Conservation and Environment]                           0.7835      0.117      6.675      0.000       0.553       1.014
+C(topic)[T.Consumer Products and Brands]                          -0.5113      0.142     -3.609      0.000      -0.789      -0.234
+C(topic)[T.Criminal Justice]                                       0.5950      0.113      5.242      0.000       0.373       0.817
+C(topic)[T.Department for Business and Trade]                     -3.6271      0.370     -9.805      0.000      -4.352      -2.902
+C(topic)[T.Department for Education]                              -3.1593      0.299    -10.556      0.000      -3.746      -2.573
+C(topic)[T.Department for Environment, Food and Rural Affairs]    -2.8722      0.327     -8.777      0.000      -3.514      -2.231
+C(topic)[T.Department for Transport]                              -3.8514      0.318    -12.104      0.000      -4.475      -3.228
+C(topic)[T.Department for Work and Pensions]                      -3.2597      0.296    -11.019      0.000      -3.839      -2.680
+C(topic)[T.Department of Health and Social Care]                  -3.2578      0.266    -12.270      0.000      -3.778      -2.737
+C(topic)[T.Foreign, Commonwealth & Development Office]            -2.5080      0.357     -7.024      0.000      -3.208      -1.808
+C(topic)[T.HM Treasury]                                           -3.3702      0.357     -9.442      0.000      -4.070      -2.671
+C(topic)[T.Home Office]                                           -2.2701      0.482     -4.709      0.000      -3.215      -1.325
+C(topic)[T.International Politics]                                 0.9346      0.128      7.297      0.000       0.684       1.186
+C(topic)[T.Leadership Accountability ]                             0.1385      0.124      1.117      0.264      -0.105       0.382
+C(topic)[T.Ministry of Justice]                                   -3.6048      0.379     -9.518      0.000      -4.347      -2.863
+C(topic)[T.Personal Requests and Inside Jokes]                    -0.8425      0.269     -3.137      0.002      -1.369      -0.316
+C(topic)[T.Pop Culture and Media]                                 -0.2554      0.134     -1.904      0.057      -0.518       0.007
+C(topic)[T.Public Safety]                                         -0.0549      0.113     -0.487      0.627      -0.276       0.166
+C(topic)[T.School and Education]                                  -0.4785      0.107     -4.462      0.000      -0.689      -0.268
+C(topic)[T.Social and Economic Welfare]                            0.6346      0.117      5.402      0.000       0.404       0.865
+C(topic)[T.none]                                                  -5.0515      0.311    -16.233      0.000      -5.661      -4.442
+C(topic)[T.other]                                                 -2.9747      0.125    -23.747      0.000      -3.220      -2.729
+C(weekday)[T.1]                                                    0.0189      0.084      0.224      0.823      -0.146       0.184
+C(weekday)[T.2]                                                    0.1411      0.087      1.618      0.106      -0.030       0.312
+C(weekday)[T.3]                                                    0.1808      0.138      1.313      0.189      -0.089       0.451
+C(weekday)[T.4]                                                    0.0713      0.090      0.790      0.429      -0.106       0.248
+C(weekday)[T.5]                                                    0.0795      0.091      0.877      0.381      -0.098       0.257
+C(weekday)[T.6]                                                    0.0131      0.090      0.146      0.884      -0.163       0.190
+lex_score                                                         -0.0878      0.012     -7.290      0.000      -0.111      -0.064
+log_words                                                          0.8493      0.039     22.054      0.000       0.774       0.925
+log_days                                                           1.3415      0.161      8.326      0.000       1.026       1.657
+==================================================================================================================================
+
+NB2 (MLE) cross-check:
+                     NegativeBinomial Regression Results                      
+==============================================================================
+Dep. Variable:             signatures   No. Observations:               546554
+Model:               NegativeBinomial   Df Residuals:                   546510
+Method:                           MLE   Df Model:                           43
+Date:                Tue, 28 Jul 2026   Pseudo R-squ.:                 -0.2428
+Time:                        17:32:38   Log-Likelihood:            -3.2513e+06
+converged:                      False   LL-Null:                   -2.6162e+06
+Covariance Type:            nonrobust   LLR p-value:                     1.000
+==================================================================================================================================
+                                                                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                         -0.9825        nan        nan        nan         nan         nan
+C(year)[T.2023]                                                    0.2385        nan        nan        nan         nan         nan
+C(year)[T.2024]                                                    0.3165        nan        nan        nan         nan         nan
+C(year)[T.2025]                                                   -0.3626        nan        nan        nan         nan         nan
+C(year)[T.2026]                                                   -2.0185        nan        nan        nan         nan         nan
+C(source)[T.changeorg_au]                                         -7.0644        nan        nan        nan         nan         nan
+C(source)[T.changeorg_other]                                      -7.8933        nan        nan        nan         nan         nan
+C(source)[T.changeorg_treated]                                    -7.3559        nan        nan        nan         nan         nan
+C(source)[T.uk_2019]                                               1.0135        nan        nan        nan         nan         nan
+C(source)[T.uk_current]                                            1.7353        nan        nan        nan         nan         nan
+C(topic)[T.Cabinet Office]                                        -2.0601        nan        nan        nan         nan         nan
+C(topic)[T.Civil Rights and Diversity]                            -0.5096        nan        nan        nan         nan         nan
+C(topic)[T.Community Planning]                                     0.3794        nan        nan        nan         nan         nan
+C(topic)[T.Conservation and Environment]                           0.7835        nan        nan        nan         nan         nan
+C(topic)[T.Consumer Products and Brands]                          -0.5113        nan        nan        nan         nan         nan
+C(topic)[T.Criminal Justice]                                       0.5950        nan        nan        nan         nan         nan
+C(topic)[T.Department for Business and Trade]                     -3.6271        nan        nan        nan         nan         nan
+C(topic)[T.Department for Education]                              -3.1593        nan        nan        nan         nan         nan
+C(topic)[T.Department for Environment, Food and Rural Affairs]    -2.8722        nan        nan        nan         nan         nan
+C(topic)[T.Department for Transport]                              -3.8514        nan        nan        nan         nan         nan
+C(topic)[T.Department for Work and Pensions]                      -3.2597        nan        nan        nan         nan         nan
+C(topic)[T.Department of Health and Social Care]                  -3.2578        nan        nan        nan         nan         nan
+C(topic)[T.Foreign, Commonwealth & Development Office]            -2.5080        nan        nan        nan         nan         nan
+C(topic)[T.HM Treasury]                                           -3.3702        nan        nan        nan         nan         nan
+C(topic)[T.Home Office]                                           -2.2701        nan        nan        nan         nan         nan
+C(topic)[T.International Politics]                                 0.9346        nan        nan        nan         nan         nan
+C(topic)[T.Leadership Accountability ]                             0.1385        nan        nan        nan         nan         nan
+C(topic)[T.Ministry of Justice]                                   -3.6048        nan        nan        nan         nan         nan
+C(topic)[T.Personal Requests and Inside Jokes]                    -0.8425        nan        nan        nan         nan         nan
+C(topic)[T.Pop Culture and Media]                                 -0.2554        nan        nan        nan         nan         nan
+C(topic)[T.Public Safety]                                         -0.0549        nan        nan        nan         nan         nan
+C(topic)[T.School and Education]                                  -0.4785        nan        nan        nan         nan         nan
+C(topic)[T.Social and Economic Welfare]                            0.6346        nan        nan        nan         nan         nan
+C(topic)[T.none]                                                  -5.0515        nan        nan        nan         nan         nan
+C(topic)[T.other]                                                 -2.9747        nan        nan        nan         nan         nan
+C(weekday)[T.1]                                                    0.0189        nan        nan        nan         nan         nan
+C(weekday)[T.2]                                                    0.1411        nan        nan        nan         nan         nan
+C(weekday)[T.3]                                                    0.1808        nan        nan        nan         nan         nan
+C(weekday)[T.4]                                                    0.0713        nan        nan        nan         nan         nan
+C(weekday)[T.5]                                                    0.0795        nan        nan        nan         nan         nan
+C(weekday)[T.6]                                                    0.0131        nan        nan        nan         nan         nan
+lex_score                                                         -0.0878        nan        nan        nan         nan         nan
+log_words                                                          0.8493        nan        nan        nan         nan         nan
+log_days                                                           1.3415        nan        nan        nan         nan         nan
+alpha                                                             50.2829        nan        nan        nan         nan         nan
+==================================================================================================================================
